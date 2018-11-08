@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src='vendor/jquery.min.js'></script>
+    <script src='other.js'></script>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+      integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="other.css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+    <title></title>
+  </head>
+  <body>
+
+    <h1 class="animated zoomIn">Royal Heightness</h1>
+
+    <div class="instructions">
+      <p>Instructions:<br>Sort the six castles from shortest to tallest. Please input numbers from "1" to "6", "1" represents shortest and "6" represents tallest.</p>
+    </div>
+
+
+    <div id="sortable" class="castles">
+
+      <div id="anaheim">
+        <label>Disneyland, Anaheim</label><br>
+        <img class="castle" src="images/anaheim.png" alt="Disneyland Anaheim"><br>
+        <input id="1" type="text" placeholder="Your rank here">
+      </div>
+      <div id="hongkong">
+        <label>Disneyland, Hong Kong</label><br>
+        <img class="castle" src="images/hongkong.png" alt="Disneyland Hong Kong"><br>
+        <input id="2" type="text" placeholder="Your rank here">
+      </div>
+      <div id="paris">
+        <label>Disneyland, Paris</label><br>
+        <img class="castle" src="images/paris.png" alt="Disneyland Paris"><br>
+        <input id="3" type="text" placeholder="Your rank here">
+      </div>
+      <div id="shanghai">
+        <label>Shanghai Disney</label><br>
+        <img class="castle" src="images/shanghai.png" alt="Shanghai Disney"><br>
+        <input id="6" type="text" placeholder="Your rank here">
+      </div>
+      <div id="tokyo">
+        <label>Disneyland, Tokyo</label><br>
+        <img class="castle" src="images/tokyo.png" alt="Tokyo Disney"><br>
+        <input id="4" type="text" placeholder="Your rank here">
+      </div>
+      <div id="orlando">
+        <label>Walt Disney World, Orlando</label><br>
+        <img class="castle" src="images/world.png" alt="Magic Kingdom Orlando"><br>
+        <input id="5" type="text" placeholder="Your rank here">
+      </div>
+
+    </div>
+
+    <button type="submit" form="nameform" value="Submit">Submit</button>
+
+    <div id='actual'>
+      <img id='actualheight' style="display: none;" src="images/actualheight.png">
+    </div>
+
+
+
+
+    <!-- <ul id="sortable" class="castles">
+      <li><img src="images/anaheim.png" alt="Disneyland Anaheim">Disneyland, Anaheim</li>
+      <li><img src="images/hongkong.png" alt="Disneyland Hong Kong">Disneyland, Hong Kong</li>
+      <li><img src="images/paris.png" alt="Disneyland Paris">Disneyland, Paris</li>
+      <li><img src="images/shanghai.png" alt="Disneyland Shanghai">Shanghai Disney</li>
+      <li><img src="images/tokyo.png" alt="Disneyland Tokyo">Tokyo Disney</li>
+      <li><img src="images/world.png" alt="Magic Kingdom Orlando">Magic Kingdom, Orlando</li>
+    </ul> -->
+
+
+  </body>
+</html>

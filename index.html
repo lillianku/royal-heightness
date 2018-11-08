@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+      integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+      crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src='main.js'></script>
+
+    <title class="animated zoomIn">Royal Heightness</title>
+
+  </head>
+  <body>
+
+    <h1 class="animated zoomIn">Royal Heightness</h1>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog -->
+    <dialog open id="open">
+      <p>Instructions:<br>Sort the six castles from shortest to tallest by dragging each castle.</p>
+      <button type="button" id="start">Start Game</button>
+    </dialog>
+
+    <dialog open id="win" style="display: none;">
+      <p>You got them right!</p>
+      <button type="button" id="yay">Yay!</button>
+    </dialog>
+
+    <dialog open id="wrong" style="display: none;">
+      <p>Sorry, try again :(</p>
+      <button type="button" id="sorry">X</button>
+    </dialog>
+
+    <ul id="sortable" style='display: none;'>
+        <li><div><img id="1" class="castles" src="images/anaheim.png"></div><p>Disneyland, Anaheim</p><div class="height" style="display:none;">77ft</div></li>
+        <li><div><img id="2" class="castles" src="images/hongkong.png"></div><p>Disneyland, Hong Kong</p><div class="height" style="display:none;">77ft</div></li>
+        <li><div><img id="3" class="castles" src="images/paris.png"></div><p>Disneyland, Paris</p><div class="height" style="display:none;">167ft</div></li>
+        <li><div><img id="4" class="castles" src="images/tokyo.png"></div><p>Disneyland, Tokyo</p><div class="height" style="display:none;">168ft</div></li>
+        <li><div><img id="5" class="castles" src="images/world.png"></div><p>Walt Disney World, Orlando</p><div class="height" style="display:none;">189ft</div></li>
+        <li><div><img id="6" class="castles" src="images/shanghai.png"></div><p>Shanghai Disney</p><div class="height" style="display:none;">197ft</div></li>
+    </ul>
+
+    <button type="button" id="submit" style='display: none;'>Submit</button>
+    <button type="button" id="reload" style='display: none;'>Restart</button>
+
+  </body>
+</html>

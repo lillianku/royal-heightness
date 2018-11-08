@@ -1,0 +1,100 @@
+*{ box-sizing: border-box; }
+
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #F1DEDE;
+  background-image: url("images/confetti.png");
+  background-repeat: repeat;
+}
+
+dialog{
+  font-family: 'Fredoka One', cursive;
+  margin: 10px auto;
+  padding: 10px 25px;
+  background-color: white;
+  border: 1px solid #56CBF9;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+  font-size: 20px;
+  position: static;
+}
+
+h1{
+  font-family: 'Sacramento', cursive, bold;
+  font-size: 100px;
+  margin:0px 0px 10px 0px;
+  color: white;
+  text-shadow: -2px 0 #56CBF9, 0 2px #56CBF9, 2px 0 #56CBF9, 0 -2px #56CBF9;
+}
+
+.instructions p{
+  font-family: 'Fredoka One', cursive;
+  margin: 10px auto;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #56CBF9;
+  border-radius: 25px;
+  width: 1050px;
+  font-size: 20px;
+}
+
+#sortable {
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #56CBF9;
+  border-radius: 25px;
+  width: 1050px;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+li{
+  padding: 20px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: move;
+  cursor: -webkit-grab;
+}
+
+/* https://stackoverflow.com/questions/5697067/css-for-grabbing-cursors-drag-drop/ */
+li:active{
+  cursor: -webkit-grabbing;
+}
+
+li p{
+  min-height: 50px;
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  margin: 5px auto;
+  border-radius: 25px;
+  font-family: 'Fredoka One', cursive;
+  background-color: white;
+  border: 1px solid #56CBF9;
+  font-size: 15px;
+}
+/* Supposed to animate the castles growing to their actual heights */
+.castles{
+  height:150px;
+  width: auto;
+}
+
+.scaled{
+  width: 100%;
+}
